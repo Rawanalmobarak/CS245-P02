@@ -1,5 +1,9 @@
 public class BinaryIterativeSearch implements Practice2Search {
 
+	/*
+	There is no point to assigning a variable here.  
+	return "BinaryIterativeSearch";
+	*/
 	@Override
 	public String searchName() {
 		String funcName = "BinaryIterativeSearch";
@@ -24,6 +28,9 @@ public class BinaryIterativeSearch implements Practice2Search {
 				beg = mid + 1;
 			}
 			
+			/*
+			It makes more sense to have this first (It's your base case)
+			*/
 			if (target == arr[mid]) {
 				return mid;
 			}
